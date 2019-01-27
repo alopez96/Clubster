@@ -32,7 +32,7 @@ export default class Notifications extends Component {
 
     _renderItem = ({ item }) => {
         return (
-            <View style={{ flex: 1, flexDirection: 'row', height: 100  }}>
+            <View style={{ flex: 1, flexDirection: 'row', height: 100 }}>
                 <TouchableOpacity style={styles.avatar}>
                     <Image style={styles.imageAvatar} source={{ uri: this.state.img }} />
                 </TouchableOpacity>
@@ -138,37 +138,27 @@ const styles = StyleSheet.create({
         marginRight: 5,
         width: 65,
         height: 30,
+        padding: 5,
         backgroundColor: '#338293',
         alignSelf: 'center',
     },
     acceptRejectText: {
-        marginLeft: 8,
-        marginRight: 8,
-        marginTop: 6,
-        marginBottom: 6,
         textAlignVertical: 'center',
         textAlign: 'center',
         fontSize: 14,
         color: '#fff'
     },
     avatar: {
-        width: 50,
-        height: 50,
-        borderRadius: 50,
-        borderWidth: 4,
-        borderColor: "white",
         justifyContent: 'flex-start',
         alignItems: 'center',
         marginTop: 25,
         marginRight: 10,
-        marginBottom: 10
+        marginBottom: 10,
+        marginLeft: 5
     },
     imageAvatar: {
         width: 50,
         height: 50,
-        borderColor: "white",
-        borderRadius: 50,
-        alignSelf: 'center',
-        position: 'relative'
+        borderRadius: 25,
     }
 });
